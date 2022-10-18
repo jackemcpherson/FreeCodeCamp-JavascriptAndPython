@@ -5,5 +5,5 @@ But for the purpose of this challenge, we would like you to use one of the JavaS
 */
 
 function confirmEnding(str, target) {
-    return str.slice(str.length - target.length) === target;
+  return str.slice(str.length - target.length) === target;
 }

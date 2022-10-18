@@ -4,9 +4,9 @@ Return the truncated string with a ... ending.
 */
 
 function truncateString(str, num) {
-    if (str.length > num) {
-      return str.slice(0, num).concat("...");
-    } else {
-      return str;
-    }
+  if (str.length > num) {
+    return str.slice(0, num).concat("...");
+  } else {
+    return str;
   }
+}

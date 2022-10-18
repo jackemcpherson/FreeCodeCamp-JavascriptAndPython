@@ -8,40 +8,41 @@ All letters will be uppercase. Do not transform any non-alphabetic character (i.
 */
 
 let convObj = {
-    'N': 'A',
-    'O': 'B',
-    'P': 'C',
-    'Q': 'D',
-    'R': 'E',
-    'S': 'F',
-    'T': 'G',
-    'U': 'H',
-    'V': 'I',
-    'W': 'J',
-    'X': 'K',
-    'Y': 'L',
-    'Z': 'M',
-    'A': 'N',
-    'B': 'O',
-    'C': 'P',
-    'D': 'Q',
-    'E': 'R',
-    'F': 'S',
-    'G': 'T',
-    'H': 'U',
-    'I': 'V',
-    'J': 'W',
-    'K': 'X',
-    'L': 'Y',
-    'M': 'Z'}
-   
-   function rot13(str) {
-     let strRegex = /[A-Z]/;
-     let strArr = str.split('');
-     for (let i in strArr) {
-       if (strRegex.test(strArr[i])) {
-         strArr[i] = convObj[strArr[i]];
-       }
-     }
-     return strArr.join("");
-   }
+  N: "A",
+  O: "B",
+  P: "C",
+  Q: "D",
+  R: "E",
+  S: "F",
+  T: "G",
+  U: "H",
+  V: "I",
+  W: "J",
+  X: "K",
+  Y: "L",
+  Z: "M",
+  A: "N",
+  B: "O",
+  C: "P",
+  D: "Q",
+  E: "R",
+  F: "S",
+  G: "T",
+  H: "U",
+  I: "V",
+  J: "W",
+  K: "X",
+  L: "Y",
+  M: "Z",
+};
+
+function rot13(str) {
+  let strRegex = /[A-Z]/;
+  let strArr = str.split("");
+  for (let i in strArr) {
+    if (strRegex.test(strArr[i])) {
+      strArr[i] = convObj[strArr[i]];
+    }
+  }
+  return strArr.join("");
+}

@@ -7,10 +7,9 @@ Only integers greater than or equal to zero will be supplied to the function.
 */
 
 function factorialize(num) {
-    if (num === 0 || num === 1)
-      return 1;
-    for (let x = num - 1; x >= 1; x--) {
-      num *= x;
-    }
-    return num;
+  if (num === 0 || num === 1) return 1;
+  for (let x = num - 1; x >= 1; x--) {
+    num *= x;
   }
+  return num;
+}

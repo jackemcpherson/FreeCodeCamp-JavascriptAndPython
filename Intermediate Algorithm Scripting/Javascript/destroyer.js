@@ -5,10 +5,10 @@ Note: You have to use the arguments object.
 */
 
 function destroyer(arr) {
-    let newArr = arguments[0];
-    let delArr = [];
-    for (let x = 1; x < arguments.length; x++) {
-      delArr.push(arguments[x])
-    }
-    return newArr.filter(item => !delArr.includes(item));
+  let newArr = arguments[0];
+  let delArr = [];
+  for (let x = 1; x < arguments.length; x++) {
+    delArr.push(arguments[x]);
   }
+  return newArr.filter((item) => !delArr.includes(item));
+}

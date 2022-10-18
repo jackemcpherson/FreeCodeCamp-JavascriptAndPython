@@ -5,9 +5,9 @@ If no element passes the test, return undefined.
 */
 
 function findElement(arr, func) {
-    for (let x = 0; x < arr.length; x++) {
-      if (func(arr[x])) {
-        return arr[x];
-      }
+  for (let x = 0; x < arr.length; x++) {
+    if (func(arr[x])) {
+      return arr[x];
     }
   }
+}

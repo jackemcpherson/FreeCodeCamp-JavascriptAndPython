@@ -4,11 +4,11 @@ For example, sumAll([4,1]) should return 10 because sum of all the numbers betwe
 */
 
 function sumAll(arr) {
-    let arrMax = Math.max(...arr);
-    let arrMin = Math.min(...arr);
-    let sum = 0;
-    for (let x = arrMin; x <= arrMax; x++) {
-      sum += x;
-    }
-    return sum;
+  let arrMax = Math.max(...arr);
+  let arrMin = Math.min(...arr);
+  let sum = 0;
+  for (let x = arrMin; x <= arrMax; x++) {
+    sum += x;
   }
+  return sum;
+}

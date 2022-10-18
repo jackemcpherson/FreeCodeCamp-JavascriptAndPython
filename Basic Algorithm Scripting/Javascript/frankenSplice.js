@@ -6,10 +6,10 @@ Return the resulting array. The input arrays should remain the same after the fu
 */
 
 function frankenSplice(arr1, arr2, n) {
-    let newArray = arr2.slice();
-    for (let x = 0; x < arr1.length; x++) {
-      newArray.splice(n, 0, arr1[x]);
-      n++;
-    }
-    return newArray;
+  let newArray = arr2.slice();
+  for (let x = 0; x < arr1.length; x++) {
+    newArray.splice(n, 0, arr1[x]);
+    n++;
   }
+  return newArray;
+}

@@ -8,17 +8,15 @@ Input strings are guaranteed to be English words in all lowercase.
 */
 
 function translatePigLatin(str) {
-    let newStr = "";
-    let vowelRegex = /[aeiou]/gi;
-    if (str[0].match(vowelRegex)) {
-      newStr = str + "way";
-    }
-    else if (str.match(vowelRegex) === null) {
-      newStr = str + "ay";
-    }
-    else {
-      let firstVowel = str.indexOf(str.match(vowelRegex)[0])
-      newStr = str.substr(firstVowel) + str.substr(0, firstVowel) + "ay"
-    }
-    return newStr;
+  let newStr = "";
+  let vowelRegex = /[aeiou]/gi;
+  if (str[0].match(vowelRegex)) {
+    newStr = str + "way";
+  } else if (str.match(vowelRegex) === null) {
+    newStr = str + "ay";
+  } else {
+    let firstVowel = str.indexOf(str.match(vowelRegex)[0]);
+    newStr = str.substr(firstVowel) + str.substr(0, firstVowel) + "ay";
   }
+  return newStr;
+}

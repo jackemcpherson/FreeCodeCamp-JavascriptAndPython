@@ -5,11 +5,11 @@ Hint: Try converting each value to a Boolean.
 */
 
 function bouncer(arr) {
-    let newArr = [];
-    for (let x = 0; x < arr.length; x++) {
-      if (arr[x]) {
-        newArr.push(arr[x]);
-      }
+  let newArr = [];
+  for (let x = 0; x < arr.length; x++) {
+    if (arr[x]) {
+      newArr.push(arr[x]);
     }
-    return newArr;
   }
+  return newArr;
+}

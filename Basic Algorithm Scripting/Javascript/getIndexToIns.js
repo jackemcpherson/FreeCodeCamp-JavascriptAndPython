@@ -6,10 +6,9 @@ Likewise, getIndexToIns([20,3,5], 19) should return 2 because once the array has
 */
 
 function getIndexToIns(arr, num) {
-    arr.sort((a, b) => a - b);
-    for (let x = 0; x < arr.length; x++) {
-      if (arr[x] >= num)
-        return x;
-    }
-    return arr.length;
+  arr.sort((a, b) => a - b);
+  for (let x = 0; x < arr.length; x++) {
+    if (arr[x] >= num) return x;
   }
+  return arr.length;
+}

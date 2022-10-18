@@ -4,9 +4,9 @@ Remember, you can iterate through an array with a simple for loop, and access ea
 */
 
 function largestOfFour(arr) {
-    let newArr = [];
-    for (let x = 0; x < arr.length; x++) {
-      newArr.push(Math.max(...arr[x]));
-    }
-    return newArr;
+  let newArr = [];
+  for (let x = 0; x < arr.length; x++) {
+    newArr.push(Math.max(...arr[x]));
   }
+  return newArr;
+}

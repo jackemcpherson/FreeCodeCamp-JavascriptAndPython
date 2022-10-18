@@ -7,9 +7,9 @@ We'll also pass strings with special symbols, such as 2A3*3a2, 2A3 3a2, and 2_A3
 */
 
 function palindrome(str) {
-    let strRegex = /[a-z0-9]/gi;
-    let strArray = str.toUpperCase().match(strRegex);
-    let cleanStr = strArray.join("");
-    let revStr = strArray.reverse().join("");
-    return revStr === cleanStr;
-  }
+  let strRegex = /[a-z0-9]/gi;
+  let strArray = str.toUpperCase().match(strRegex);
+  let cleanStr = strArray.join("");
+  let revStr = strArray.reverse().join("");
+  return revStr === cleanStr;
+}

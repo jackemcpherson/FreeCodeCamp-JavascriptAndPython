@@ -5,7 +5,7 @@ Your result must be a string.
 */
 
 function reverseString(str) {
-    let strArr = str.split("");
-    strArr = strArr.reverse();
-    return strArr.join("");
+  let strArr = str.split("");
+  strArr = strArr.reverse();
+  return strArr.join("");
 }
