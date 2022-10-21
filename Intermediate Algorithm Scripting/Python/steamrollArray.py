@@ -1,6 +1,7 @@
 # Flatten a nested array.
 # You must account for varying levels of nesting.
 
+
 def steamrollArray(arr):
     newArr = []
     for x in arr:
